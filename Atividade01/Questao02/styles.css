@@ -1,20 +1,28 @@
+*{
+    font-family:cursive
+}
+
+body {
+    background: #333; /* Cor de fundo */
+  }
+
 /* Estilização do header e footer */
 header, footer {
     background-color: #333; /* Cor de fundo diferente */
     color: #fff; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento interno */
+    padding: 10px; /* Espaçamento interno */
 }
 
 /* Centralizar o conteúdo do main */
 main {
     background-color: #fff; /* Cor de fundo do main */
-    padding: 20px;
+    padding: 5px; /* Espaçamento interno */
     text-align: center; /* Centraliza dentro de main */
 }
 
 /* Estilização dos links na navegação */
-.navegacao nav a {
+nav a {
     display: inline-block; /* Permite que os links fiquem lado a lado e aceitem altura e largura */
     width: 20vw; /* 20% da largura da tela (viewport width) */
     background-color: #052c12; /* Cor de fundo */
@@ -30,7 +38,7 @@ main {
 .caixa {
     display: inline-block; /* Para que as caixas fiquem lado a lado */
     width: 45%; /* 45% da largura da seção */
-    margin-right: 0%; /* Espaçamento entre as caixas */
+    margin-right: 5%; /* Espaçamento entre as caixas */
     background-color: #abeea9; /* Cor de fundo das caixas */
     color: #052c12; /* Cor do texto */
     padding: 20px; /* Espaçamento interno */
@@ -46,4 +54,3 @@ main {
     border-radius: 30%; /* Borda arredondada para a imagem */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Sombra para dar um efeito de profundidade */
 }
-
