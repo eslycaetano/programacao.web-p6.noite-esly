@@ -12,6 +12,10 @@ header, footer {
     color: #fff; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     padding: 10px; /* Espaçamento interno */
+    
+    a{
+        color: #fff; /* Cor do texto dos links */
+    }
 }
 
 /* Centralizar o conteúdo do main */
