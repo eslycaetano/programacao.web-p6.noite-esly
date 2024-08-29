@@ -42,7 +42,7 @@ nav a {
 .caixa {
     display: inline-block; /* Para que as caixas fiquem lado a lado */
     width: 45%; /* 45% da largura da seção */
-    margin-right: 5%; /* Espaçamento entre as caixas */
+    margin: 5%; /* Espaçamento entre as caixas */
     background-color: #abeea9; /* Cor de fundo das caixas */
     color: #052c12; /* Cor do texto */
     padding: 20px; /* Espaçamento interno */
