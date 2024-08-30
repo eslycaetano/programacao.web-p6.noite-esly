@@ -1,0 +1,51 @@
+body {
+    background: #777; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do header e footer */
+header, footer {
+    background-color: #333; /* Cor de fundo diferente */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilização do main */
+main {
+    display: flex; /* Layout flexível para organizar sidebar e artigos */
+    background-color: #777; /* Cor de fundo do main */
+    padding: 20px; /* Espaçamento interno */
+    gap: 20px; /* Espaçamento entre a sidebar e os artigos */
+    text-align: center;
+}
+
+/* Estilização da sidebar */
+.sideBar {
+    align-items: ;
+    background-color: #052c12; /* Cor de fundo da sidebar */
+    padding: 15px; /* Espaçamento interno */
+}
+
+/* Estilização dos artigos */
+.artigos {
+    background-color: #777; /* Cor de fundo dos artigos */
+    padding: 15px; /* Espaçamento interno */
+}
+
+.artigos article {
+    background-color: #abeea9; /* Cor de fundo dos artigos individuais */
+    color: #052c12;
+    margin-bottom: 15px; /* Espaçamento entre os artigos */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
