@@ -13,39 +13,84 @@ header, footer {
     padding: 10px; /* Espaçamento interno */
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 /* Estilização do main */
 main {
     display: flex; /* Layout flexível para organizar sidebar e artigos */
-    background-color: #777; /* Cor de fundo do main */
     padding: 20px; /* Espaçamento interno */
-    gap: 20px; /* Espaçamento entre a sidebar e os artigos */
+    gap: 5%; /* Espaçamento entre a sidebar e os artigos */
     text-align: center;
 }
 
 /* Estilização da sidebar */
 .sideBar {
-    align-items: ;
-    background-color: #052c12; /* Cor de fundo da sidebar */
-    padding: 15px; /* Espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5%;
+    background-color:   #abeea9; /* Cor de fundo da sidebar */
+    border: 1px solid #052c12; /* Borda sólida */
+    width:35%; /* Largura da sidebar */
+
+    
+    h3{
+        background-color: #052c12; 
+        color: #abeea9;
+        font-size: 25px;
+    }
 }
+
+.contato {
+    display: flex;
+    align-items: center;
+    background-color: #abeea9;
+    color: #052c12;
+    padding: 10%; /* Espaçamento interno */
+    border-top: 2px solid #052c12; /* Borda sólida só NO TOPO*/
+    box-shadow: 0px 1px 5px #052c12; /* Sombra */
+    gap: 2.5%; /* Espaçamento entre a imagem e o texto */;
+}
+
+.contato img {
+    border-radius: 50%;
+    width: 35%;
+    height: auto;
+    margin-right: 15px;
+}
+
+.contato h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contato p {
+    margin: 0;
+    font-size: 16px;
+}
+
 
 /* Estilização dos artigos */
 .artigos {
-    background-color: #777; /* Cor de fundo dos artigos */
-    padding: 15px; /* Espaçamento interno */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly; /* Garante o espaçamento entre os artigos */
+    margin-right: 2.5%;
+    width: 60%; /* Largura dos artigos */
+    background-color: #052c12;
+    padding: 15px;
+    border-radius: 20px;
 }
 
 .artigos article {
     background-color: #abeea9; /* Cor de fundo dos artigos individuais */
     color: #052c12;
     margin-bottom: 15px; /* Espaçamento entre os artigos */
-    padding: 10px; /* Espaçamento interno */
+    padding: 5%; /* Espaçamento interno */
     border-radius: 15px; /* Bordas arredondadas */
+    text-align: justify;
+    
+    h3{
+        font-size: 25px;
+        text-align: center;
+    }
 }
 
