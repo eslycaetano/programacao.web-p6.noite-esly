@@ -40,10 +40,11 @@ main {
 
 .contato {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     background-color: #abeea9;
     color: #052c12;
-    padding: 10%; /* Espaçamento interno */
+    padding: 5%; /* Espaçamento interno */
     border-top: 2px solid #052c12; /* Borda sólida só NO TOPO*/
     box-shadow: 0px 1px 5px #052c12; /* Sombra */
     gap: 2.5%; /* Espaçamento entre a imagem e o texto */;

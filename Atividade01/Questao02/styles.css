@@ -8,7 +8,6 @@ body {
 
 /* Estilização do header e footer */
 header, footer {
-    background-color: #333; /* Cor de fundo diferente */
     color: #fff; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     padding: 10px; /* Espaçamento interno */
