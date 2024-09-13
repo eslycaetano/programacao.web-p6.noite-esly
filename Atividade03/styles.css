@@ -1,0 +1,62 @@
+*{
+    font-family:cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do header e footer */
+header, footer {
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+}
+
+body {
+    background: #333; /* Cor de fundo */
+    height: 100vh;
+  }
+
+/* Centralizar o conteúdo do main */
+main {
+    display: flex;
+    padding: 5px; /* Espaçamento interno */
+    text-align: center; /* Centraliza dentro de main */
+    justify-content: center;
+}
+
+.Container {
+    background-color: #abeea9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50vw;
+}
+
+.Consulta {
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkgrey;
+    border: 2px solid #052c12;
+}
+
+button {
+    padding: 10px;
+    border: 2px solid #052c12;
+    border-radius: 5px;
+    background-color: #052c12;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
