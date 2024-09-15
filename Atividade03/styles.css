@@ -27,27 +27,38 @@ main {
 
 .Container {
     background-color: #abeea9;
-    padding: 20px;
+    color:#052c12;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 50vw;
+    width: 75vw;
 }
 
 .Consulta {
     padding: 50px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+}
+
+.Resultado p{
+    margin-top: 2px;
+    text-align: start;
 }
 
 input {
     width: 50%;
+    height: 50px;
     padding: 10px;
     border-radius: 5px;
     background-color: darkgrey;
     border: 2px solid #052c12;
+    font-size: 15px;
 }
 
 button {
+    width: 25%;
+    height: 75px;
     padding: 10px;
     border: 2px solid #052c12;
     border-radius: 5px;
