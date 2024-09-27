@@ -32,4 +32,5 @@ Thumbs.db
 *.sw?
  
 # Ignorar todos os package-lock.json em qualquer subdiretório
+package-lock.json
 **/package-lock.json
