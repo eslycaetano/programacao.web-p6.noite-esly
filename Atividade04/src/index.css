@@ -1,0 +1,21 @@
+body {
+    background: #777; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do header e footer */
+header, footer {
+    background-color: #333; /* Cor de fundo diferente */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+}
+
+main {
+    display: flex; /* Layout flexível para organizar sidebar e artigos */
+    padding: 20px; /* Espaçamento interno */
+    gap: 5%; /* Espaçamento entre a sidebar e os artigos */
+    text-align: center;
+}
