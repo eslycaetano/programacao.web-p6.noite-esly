@@ -1,6 +1,5 @@
 import { CounterColateral } from "./components/CounterColateral";
 
-
 export function App() {
   return (
     <div>
