@@ -35,14 +35,14 @@ app.post("/animes", (req, res) => {
   try {
     const { nome, genero, estudio } = req.body;
 
-    if (!nome || !genero || !estudio) {
+    if (!nome || !genero || !estudio) { //Garantindo que sejá obrigatorio todos os campos
       return res
         .status(400)
         .json({ error: "Todos os campos são obrigatórios." });
     }
 
     const newAnime = {
-      id: animes.length + 1, // Gerando um ID simples.
+      id: animes.length + 1, // Gerando um ID simples, sempre vai ser a quantidade +1.
       nome,
       genero,
       estudio,
@@ -67,7 +67,7 @@ app.put("/animes/:id", (req, res) => {
       return res.status(404).json({ error: "Anime não encontrado." });
     }
 
-    if (!nome || !genero || !estudio) {
+    if (!nome || !genero || !estudio) { //Garantindo que sejá obrigatorio todos os campos
       return res
         .status(400)
         .json({ error: "Todos os campos são obrigatórios." });
