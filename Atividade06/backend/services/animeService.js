@@ -1,4 +1,4 @@
-// services/animeService.js
+// Atividade06\backend\services\animeService.js
 const animeModel = require('../models/animeModel');
 
 function getAllAnimes() {
