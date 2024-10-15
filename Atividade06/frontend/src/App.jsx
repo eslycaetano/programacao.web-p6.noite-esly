@@ -1,12 +1,21 @@
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import AddAnime from "./pages/AddAnime";
+import Navbar from "./components/Navbar";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <h1>Animes</h1>
-    </>
-  )
-}
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/add-anime" element={<AddAnime />} />
+          <Route path="/edit-anime/:id" element={<AddAnime />} /> {/* Reutilizando o componente */}
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
-export default App
+export default App;
