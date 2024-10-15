@@ -13,7 +13,7 @@ function getAnimeById(id) {
   return anime;
 }
 
-function addAnime(nome, genero, estudio) {
+function addAnime(nome, genero, estudio, imagem) {
   if (!nome || !genero || !estudio) {
     throw new Error('Todos os campos são obrigatórios');
   }
@@ -21,13 +21,14 @@ function addAnime(nome, genero, estudio) {
     id: animeModel.getAllAnimes().length + 1,
     nome,
     genero,
-    estudio
+    estudio,
+    imagem 
   };
   animeModel.addAnime(newAnime);
   return newAnime;
 }
 
-function updateAnime(id, nome, genero, estudio) {
+function updateAnime(id, nome, genero, estudio, imagem) {
   const anime = animeModel.getAnimeById(id);
   if (!anime) {
     throw new Error('Anime não encontrado');
@@ -35,7 +36,7 @@ function updateAnime(id, nome, genero, estudio) {
   if (!nome || !genero || !estudio) {
     throw new Error('Todos os campos são obrigatórios');
   }
-  const updatedAnime = { id, nome, genero, estudio };
+  const updatedAnime = { id, nome, genero, estudio, imagem };
   animeModel.updateAnime(id, updatedAnime);
   return updatedAnime;
 }

@@ -22,8 +22,8 @@ function getAnimeById(req, res) {
 
 function addAnime(req, res) {
   try {
-    const { nome, genero, estudio } = req.body;
-    const newAnime = animeService.addAnime(nome, genero, estudio);
+    const { nome, genero, estudio, imagem } = req.body;
+    const newAnime = animeService.addAnime(nome, genero, estudio, imagem);
     res.status(201).json(newAnime);
   } catch (error) {
     res.status(400).json({ error: error.message });
@@ -33,8 +33,8 @@ function addAnime(req, res) {
 function updateAnime(req, res) {
   try {
     const id = parseInt(req.params.id);
-    const { nome, genero, estudio } = req.body;
-    const updatedAnime = animeService.updateAnime(id, nome, genero, estudio);
+    const { nome, genero, estudio, imagem } = req.body;
+    const updatedAnime = animeService.updateAnime(id, nome, genero, estudio, imagem);
     res.json(updatedAnime);
   } catch (error) {
     res.status(400).json({ error: error.message });

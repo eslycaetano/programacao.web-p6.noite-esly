@@ -1,5 +1,5 @@
 // models/animeModel.js
-let animes = require('../data/animeData'); // Importa a lista de animes
+let animes = require('../data/animeData');
 
 // Funções relacionadas ao modelo de dados
 function getAllAnimes() {
