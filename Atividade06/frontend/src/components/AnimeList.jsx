@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getAllAnimes, deleteAnime } from "../services/AnimeService";
+import { Link } from "react-router-dom";
 
 const AnimeList = ({ onEdit }) => {
   const [animes, setAnimes] = useState([]);
@@ -20,7 +21,7 @@ const AnimeList = ({ onEdit }) => {
   const handleDelete = async (id) => {
     try {
       await deleteAnime(id);
-      fetchAnimes();  // Atualiza a lista após deletar
+      fetchAnimes(); // Atualiza a lista após deletar
     } catch (error) {
       console.error("Erro ao deletar anime:", error);
     }
@@ -32,7 +33,9 @@ const AnimeList = ({ onEdit }) => {
       <ul>
         {animes.map((anime) => (
           <li key={anime.id}>
-            <p>{anime.nome}</p>
+            <Link to={`/animes/${anime.id}`}>
+              <p>{anime.nome}</p>
+            </Link>
             <button onClick={() => onEdit(anime)}>Editar</button>
             <button onClick={() => handleDelete(anime.id)}>Deletar</button>
           </li>
