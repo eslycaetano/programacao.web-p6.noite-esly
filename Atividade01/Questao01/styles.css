@@ -1,0 +1,24 @@
+/* Estilização do header e footer */
+header, footer {
+    background-color: #333; /* Cor de fundo diferente */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Centralizar o conteúdo do main */
+main {
+    background-color: #fff; /* Cor de fundo do main */
+    padding: 20px;
+    text-align: center; /* Centraliza os parágrafos dentro de main */
+}
+
+/* Estilização dos parágrafos */
+.paragrafos p {
+    display: inline; /* Exibe os parágrafos na mesma linha */
+    background-color: #052c12; /* Cor de fundo dos parágrafos */
+    color: #abeea9; /* Cor do texto */
+    border-radius: 15px; /* Borda arredondada */
+    margin: 10px; /* Margem entre os parágrafos */
+    padding: 5px; /* Espaçamento interno */
+}
