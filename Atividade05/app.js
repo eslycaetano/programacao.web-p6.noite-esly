@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
-let animes = require("./data/animeData"); // Importando a lista de animes de um arquivo separado
+let animes = require("./animeData"); // Importando a lista de animes de um arquivo separado
+
 
 // Middleware né
 app.use(express.json());
