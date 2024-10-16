@@ -1,3 +1,5 @@
+// src/components/AnimeForm.jsx
+
 import { useState } from "react";
 import { addAnime, updateAnime } from "../services/AnimeService";
 
@@ -25,47 +27,56 @@ const AnimeForm = ({ existingAnime, onSave }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Nome:</label>
-        <input 
-          type="text" 
-          value={nome} 
-          onChange={(e) => setNome(e.target.value)} 
-          required 
+    <form onSubmit={handleSubmit} className="bg-gray-200 p-6 rounded shadow-md">
+      <div className="mb-4">
+        <label className="block text-gray-700 font-bold mb-2">Nome:</label>
+        <input
+          type="text"
+          value={nome}
+          onChange={(e) => setNome(e.target.value)}
+          required
+          className="border border-gray-300 rounded w-full p-2"
         />
       </div>
 
-      <div>
-        <label>Gênero:</label>
-        <input 
-          type="text" 
-          value={genero} 
-          onChange={(e) => setGenero(e.target.value)} 
-          required 
+      <div className="mb-4">
+        <label className="block text-gray-700 font-bold mb-2">Gênero:</label>
+        <input
+          type="text"
+          value={genero}
+          onChange={(e) => setGenero(e.target.value)}
+          required
+          className="border border-gray-300 rounded w-full p-2"
         />
       </div>
 
-      <div>
-        <label>Estúdio:</label>
-        <input 
-          type="text" 
-          value={estudio} 
-          onChange={(e) => setEstudio(e.target.value)} 
-          required 
+      <div className="mb-4">
+        <label className="block text-gray-700 font-bold mb-2">Estúdio:</label>
+        <input
+          type="text"
+          value={estudio}
+          onChange={(e) => setEstudio(e.target.value)}
+          required
+          className="border border-gray-300 rounded w-full p-2"
         />
       </div>
 
-      <div>
-        <label>Imagem (URL):</label>
-        <input 
-          type="text" 
-          value={imagem} 
-          onChange={(e) => setImagem(e.target.value)} 
+      <div className="mb-4">
+        <label className="block text-gray-700 font-bold mb-2">Imagem (URL):</label>
+        <input
+          type="text"
+          value={imagem}
+          onChange={(e) => setImagem(e.target.value)}
+          className="border border-gray-300 rounded w-full p-2"
         />
       </div>
 
-      <button type="submit">{existingAnime ? "Atualizar" : "Adicionar"} Anime</button>
+      <button
+        type="submit"
+        className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700 transition duration-200"
+      >
+        {existingAnime ? "Atualizar" : "Adicionar"} Anime
+      </button>
     </form>
   );
 };
