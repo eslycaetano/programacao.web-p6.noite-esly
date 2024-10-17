@@ -17,13 +17,26 @@ function addAnime(nome, genero, estudio, imagem) {
   if (!nome || !genero || !estudio) {
     throw new Error('Todos os campos são obrigatórios');
   }
+
+  const animes = getAllAnimes();
+  
+  // Buscar IDs já existentes
+  const existingIds = animes.map(anime => anime.id);
+
+  // Procurar o menor ID disponível
+  let newId = 1;
+  while (existingIds.includes(newId)) {
+    newId++;
+  }
+
   const newAnime = {
-    id: animeModel.getAllAnimes().length + 1,
+    id: newId,
     nome,
     genero,
     estudio,
-    imagem 
+    imagem
   };
+  
   animeModel.addAnime(newAnime);
   return newAnime;
 }
